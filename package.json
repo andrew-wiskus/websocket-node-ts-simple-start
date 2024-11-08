@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "build:server": "tsc",
-    "build:client": "tsc -p tsconfig.client.json",
-    "build": "npm run build:server && npm run build:client",
+    "build": "npm run build:server",
     "dev": "concurrently \"tsc -w -p tsconfig.client.json\" \"tsc-watch --onSuccess \\\"nodemon ./dist/server.js\\\"\"",
     "start": "node dist/server.js"
   },
