@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Counter</title>
+</head>
+<body>
+    <h1>WebSocket Counter</h1>
+    <div id="status">Connecting...</div>
+    <div id="counter">0</div>
+    <button onclick="wsClient.updateCounter(true)">Increment</button>
+    <button onclick="wsClient.updateCounter(false)">Decrement</button>
+
+    <script src="./client/client.js"></script>
+</body>
+</html>
